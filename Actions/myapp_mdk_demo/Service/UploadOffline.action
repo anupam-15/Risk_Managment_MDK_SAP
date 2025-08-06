@@ -1,0 +1,9 @@
+{
+    "Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/DownloadStartedMessage.action",
+    "OnFailure": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/SyncFailureMessage.action"
+}

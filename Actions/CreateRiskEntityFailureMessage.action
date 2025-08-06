@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateRiskEntityFailureMessage"
+	},
+	"Message": "Failed to Create Customer record - {#ActionResults:Risk_CreateEntity/error}",
+	"Title": "Create Risk",
+	"OKCaption": "OK"
+}

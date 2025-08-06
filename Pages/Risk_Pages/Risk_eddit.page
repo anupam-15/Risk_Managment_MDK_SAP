@@ -1,0 +1,129 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel0",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "Edit Risk",
+							"TextWrap": true
+						},
+						{
+							"Value": "{title}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "RiskEdditTitle",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Title",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{descr}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "RiskEdditDescription",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Description",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{prio}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "RiskEdditPriority",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Priority",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{impact}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "RiskEdditImpact",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Impact ",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{criticality}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "RiskEdditCriticality",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Criticality ",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Edit Risk",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://save",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/RiskManagementApp/Actions/Risk_UpdateEntity.action"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+		"EntitySet": "Risks"
+	},
+	"_Type": "Page",
+	"_Name": "Risk_eddit",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/RiskManagementApp/Actions/CloseModalPage_Cancel.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Manage Risk"
+	}
+}

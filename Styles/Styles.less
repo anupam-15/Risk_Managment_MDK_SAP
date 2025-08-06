@@ -1,0 +1,107 @@
+/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
+
+Examples:
+
+@mdkYellow1: #ffbb33;
+@mdkRed1: #ff0000;
+
+//// By-Type style: All Pages in the application will now have a yellow background
+Page
+
+{ background-color: @mdkYellow1; }
+//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
+#BlueButton
+
+{ color: @mdkYellow1; background-color: #0000FF; }
+//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
+
+.MyButton
+
+{ color: @mdkYellow1; background-color: @mdkRed1; }
+*/
+
+.headerTitle {
+    font-weight: bold;
+    color: #0A6ED1;
+    font-size: 18px;
+  }
+  
+  .highlightBox {
+    background-color: #fbe8a6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .mitigationCard {
+    background-color: #d6ea8e;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 6px;
+  }
+
+  .delatebtn {
+    background-color: #f30b0b;
+    border-radius: 4px;
+   
+  }
+
+  .risksbtn {
+    background-color: #f3510bb4;
+    border-radius: 4px;
+   
+  }
+
+  .mitigationbtn {
+    background-color: #27dc0b;
+    border-radius: 4px;
+   
+  }
+
+  .editbtn {
+    background-color: #0b15dc;
+    border-radius: 4px;
+   
+  }
+  
+
+  /* Main container */
+.mitigation-details-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Header */
+.mitigation-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Each row section */
+.mitigation-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Label styles */
+.mitigation-label {
+  font-weight: 600;
+  color: #555;
+}
+
+/* Value styles */
+.mitigation-value {
+  color: #2c3e50;
+  font-style: italic;
+}

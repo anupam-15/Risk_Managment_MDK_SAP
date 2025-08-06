@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "UpdateRiskEntityFailureMessage"
+	},
+	"Message": "Failed to Save Customer Updates - {#ActionResults:Risk_UpdateEntity/error}",
+	"Title": "Update Risk",
+	"OKCaption": "OK"
+}

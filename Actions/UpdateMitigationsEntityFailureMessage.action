@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "UpdateMitigationsEntityFailureMessage"
+	},
+	"Message": "Failed to Save Customer Updates - {#ActionResults:Mitigations_UpdateEntity/error}",
+	"Title": "Update MItigations",
+	"OKCaption": "OK"
+}

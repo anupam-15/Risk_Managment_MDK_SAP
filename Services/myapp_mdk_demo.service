@@ -1,0 +1,7 @@
+{
+	"ServiceUrl": "https://9a2389e8trial-dev-riskmanagement-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/risk-management/",
+	"DestinationName": "myapp.mdk.demo",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": true
+}

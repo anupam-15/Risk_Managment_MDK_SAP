@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ValidationFailureMessage"
+	},
+	"Message": "Please Fill all the field All field is required  @ domain . domaintype",
+	"Title": "Validation Error",
+	"OKCaption": "OK"
+}

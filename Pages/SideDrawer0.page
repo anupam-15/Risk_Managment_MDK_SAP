@@ -1,0 +1,77 @@
+{
+	"Controls": [
+		{
+			"Header": {
+				"Headline": "Anupam Shukla",
+				"SubHeadline": "SAP-MDK",
+				"Alignment": "Left",
+				"IconIsCircular": false,
+				"DisableIconText": false
+			},
+			"Sections": [
+				{
+					"_Name": "SideDrawerSection0",
+					"Items": [
+						{
+							"Title": "Home",
+							"Image": "sap-icon://home",
+							"OnPress": "/RiskManagementApp/Actions/NavToMainPage.action",
+							"_Name": "SideDrawerSection0Item3",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "About",
+							"Image": "sap-icon://person-placeholder",
+							"OnPress": "/RiskManagementApp/Actions/Application/UserMenuPopover.action",
+							"_Name": "SideDrawerSection0Item0",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "Risks",
+							"Image": "sap-icon://arrow-right",
+							"OnPress": "/RiskManagementApp/Actions/NavToRisk_List.action",
+							"_Name": "SideDrawerSection0Item1",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "QR Code",
+							"Image": "sap-icon://qr-code",
+							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "Left"
+						}
+					],
+					"Visible": true,
+					"PreserveImageSpacing": true,
+					"SeparatorEnabled": true
+				}
+			],
+			"_Type": "Control.Type.SideDrawer",
+			"_Name": "SideDrawer0",
+			"DrawerButton": "sap-icon://menu2",
+			"AlwaysShowDrawerButton": false,
+			"ClearHistory": false
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SideDrawer0",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "UserMenuItem",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/RiskManagementApp/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar3",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

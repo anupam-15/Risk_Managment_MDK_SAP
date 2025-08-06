@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "Risk_CreateEntity"
+	},
+	"OnFailure": "/RiskManagementApp/Actions/CreateRiskEntityFailureMessage.action",
+	"OnSuccess": "/RiskManagementApp/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+		"EntitySet": "Risks"
+	},
+	"Properties": {
+		"title": "#Control:RiskCreateTitle/#Value",
+		"prio": "#Control:RiskCreatePriority/#Value",
+		"descr": "#Control:RiskCreateDescription/#Value",
+		"impact": "#Control:RiskCreateImpact/#Value",
+		"criticality": "#Control:RiskCreateCriticality/#Value"
+	}
+}

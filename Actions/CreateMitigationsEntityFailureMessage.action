@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateMitigationsEntityFailureMessage"
+	},
+	"Message": "Failed to Save Mitigation Create -{#ActionResults:Mitigations_Create/error}",
+	"Title": "Create Mitigations",
+	"OKCaption": "Ok",
+	"CancelCaption": "Cancel"
+}

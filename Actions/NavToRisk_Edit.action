@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToRisk_Edit"
+	},
+	"PageToOpen": "/RiskManagementApp/Pages/Risk_Pages/Risk_eddit.page",
+	"ModalPage": true
+}

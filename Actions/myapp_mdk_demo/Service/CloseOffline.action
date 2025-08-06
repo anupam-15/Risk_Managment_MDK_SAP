@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/CloseOfflineFailureMessage.action"
+}

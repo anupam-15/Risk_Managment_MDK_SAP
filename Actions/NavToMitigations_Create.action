@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToMitigations_Create"
+	},
+	"PageToOpen": "/RiskManagementApp/Pages/Mitigations_Pages/Mitigations_Create.page"
+}

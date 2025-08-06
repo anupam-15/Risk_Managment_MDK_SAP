@@ -1,0 +1,19 @@
+{
+    "Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+    "DefiningRequests": [{
+            "Name": "Mitigations",
+            "Query": "Mitigations"
+        },
+        {
+            "Name": "Risks",
+            "Query": "Risks"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/InitializeOfflineFailureMessage.action"
+}

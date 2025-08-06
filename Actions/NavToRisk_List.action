@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToRisk_List"
+	},
+	"PageToOpen": "/RiskManagementApp/Pages/Risk_Pages/Risk_List.page"
+}

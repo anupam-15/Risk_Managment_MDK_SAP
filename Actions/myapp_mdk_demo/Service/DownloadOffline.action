@@ -1,0 +1,18 @@
+{
+    "Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+    "DefiningRequests": [{
+            "Name": "Mitigations",
+            "Query": "Mitigations"
+        },
+        {
+            "Name": "Risks",
+            "Query": "Risks"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/RiskManagementApp/Actions/myapp_mdk_demo/Service/SyncFailureMessage.action",
+    "OnSuccess": "/RiskManagementApp/Rules/myapp_mdk_demo/ErrorArchive_CheckForSyncError.js"
+}

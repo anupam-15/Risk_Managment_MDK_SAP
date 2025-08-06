@@ -1,0 +1,107 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Title",
+							"_Name": "FormCellTitle0",
+							"IsVisible": true,
+							"Separator": true,
+							"Value": "",
+							"PlaceHolder": "Edit Mitigations",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "MitigationsEdit_Description",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Description",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{owner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "MitigationsEdit_Owner",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Owner",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{timeline}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "MitigationsEdit_Timeline",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Timeline",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Edit Mitigstiond",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://save",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/RiskManagementApp/Actions/Mitigations_UpdateEntity.action"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Mitigations_edit",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/RiskManagementApp/Actions/CloseModalPage_Cancel.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Manage Mitigations"
+	}
+}

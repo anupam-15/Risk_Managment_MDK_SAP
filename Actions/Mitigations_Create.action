@@ -1,0 +1,17 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "Mitigations_Create"
+	},
+	"OnFailure": "/RiskManagementApp/Actions/CreateMitigationsEntityFailureMessage.action",
+	"OnSuccess": "/RiskManagementApp/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+		"EntitySet": "Mitigations"
+	},
+	"Properties": {
+		"description": "#Control:MitigationsCreate_Description/#Value",
+		"owner": "#Control:MitigationsCreate_Owner/#Value",
+		"timeline": "#Control:MitigationsCreate_Timeline/#Value"
+	}
+}

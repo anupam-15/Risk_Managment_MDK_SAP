@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "DeleteRisksFailureMessage"
+	},
+	"Message": "Delete To failed Message",
+	"Title": "delete Failed",
+	"OKCaption": "Ok",
+	"CancelCaption": "cancel"
+}

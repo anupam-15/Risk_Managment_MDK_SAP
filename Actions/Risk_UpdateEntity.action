@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Risk_UpdateEntity"
+	},
+	"OnFailure": "/RiskManagementApp/Actions/UpdateRiskEntityFailureMessage.action",
+	"OnSuccess": "/RiskManagementApp/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+		"EntitySet": "Risks",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"title": "#Control:RiskEdditTitle/#Value",
+		"prio": "#Control:RiskEdditPriority/#Value",
+		"descr": "#Control:RiskEdditDescription/#Value",
+		"impact": "#Control:RiskEdditImpact/#Value",
+		"criticality": "#Control:RiskEdditCriticality/#Value"
+	}
+}

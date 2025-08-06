@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "DeleteMitigationsEntityFailureMessage"
+	},
+	"Message": "Delete entity failure -  {#ActionResults:Mitigations_DeleteEntity/error}",
+	"Title": "Delete Mitigations",
+	"OKCaption": "Ok",
+	"CancelCaption": "Cancel"
+}

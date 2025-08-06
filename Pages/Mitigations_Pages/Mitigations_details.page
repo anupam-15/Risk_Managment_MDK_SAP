@@ -1,0 +1,194 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{modifiedBy}",
+						"StatusText": "{ID}",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Mitigations Details",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Title",
+							"_Name": "FormCellTitle0",
+							"IsVisible": true,
+							"Separator": true,
+							"Value": "",
+							"PlaceHolder": "CFR-Non",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Wrap": true,
+							"Lines": 2,
+							"Value": "{description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "Description",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{owner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "Owner",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{timeline}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "Timeline",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{createdAt}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "CreatedAt",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{createdBy}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty4",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "CreatedBy",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{modifiedAt}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty5",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "ModifiedAt",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{modifiedBy}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty6",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Caption": "mitigation-label",
+								"Value": "mitigation-value"
+							},
+							"Caption": "ModifiedBy",
+							"Enabled": true,
+							"IsEditable": false
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/RiskManagementApp/Services/myapp_mdk_demo.service",
+		"EntitySet": "Mitigations"
+	},
+
+	"_Type": "Page",
+	"_Name": "Mitigations_details",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"Style": "editbtn",
+				"OnPress": "/RiskManagementApp/Actions/NavToMitigations_Edit.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Trash",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"Style": "delatebtn",
+				"OnPress": "/RiskManagementApp/Rules/Mitigations_DeleteConfirmation.js"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Mitigations Details"
+	}
+}
