@@ -4,11 +4,11 @@
     ],
     "mdk.uieditor": {
         "left": {
-            "visible": false
+            "visible": true
         },
         "right": {
             "visible": true
         },
-        "device": "phone"
+        "device": "tablet"
     }
 }

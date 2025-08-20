@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.OpenBarcodeScanner",
+	"OnSuccess": "/RiskManagementApp/Rules/QRCode/StoreScanResult.js",
+	"_Name": "OpenBarcodeScanner",
+	"Properties": {
+		"ScanType": "QR",
+		"OnSuccess": {
+			"_Type": "Action.Type.RunScript",
+			"Properties": {
+				"Script": "/RiskManagementApp/Rules/QRCode/StoreScanResult.js"
+			}
+		},
+		"OnFailure": {
+			"_Type": "Action.Type.Message",
+			"Properties": {
+				"Title": "Scan Failed",
+				"Message": "QR code scan was not successful.",
+				"OKCaption": "OK"
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "_Type": "Action.Type.CheckBarcodeScannerPrerequisite",
+  "ActionResult": {
+    "_Name": "OpenBarcodeScanner"
+  },
+  "OnSuccess": "/RiskManagementApp/Actions/SetQRResult.action",
+  "OnFailure": "/RiskManagementApp/Actions/QRCodeFailed.action"
+}

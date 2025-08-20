@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToCalendar"
+	},
+	"PageToOpen": "/RiskManagementApp/Pages/Calendar/Calendar_MonthPage.page"
+}

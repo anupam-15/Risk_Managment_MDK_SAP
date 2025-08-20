@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "QRCodeFailed"
+	},
+	"Message": "QR code scan was not successful.",
+	"Title": "Scan Failed",
+	"OKCaption": "OK"
+}

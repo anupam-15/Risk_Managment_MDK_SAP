@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/RiskManagementApp/Pages/Calendar/CreateAppointment_Page.page",
+	"Target": {
+		"PageToOpen": "CreateAppointment_Page"
+	}
+}

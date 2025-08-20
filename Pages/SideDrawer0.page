@@ -39,7 +39,32 @@
 						{
 							"Title": "QR Code",
 							"Image": "sap-icon://qr-code",
+							"OnPress": "/RiskManagementApp/Actions/NavToQRCodeReader.action",
 							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "CalenderTab",
+							"Image": "sap-icon://calendar",
+							"OnPress": "/RiskManagementApp/Actions/NavToCalendarTabPage.action",
+							"_Name": "SideDrawerSection0Item4",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "CalenderT",
+							"Image": "/RiskManagementApp/Images/android_calendar.png",
+							"OnPress": "/RiskManagementApp/Actions/NavToCalender.action",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "Left"
+						},
+						{
+							"Title": "Map",
+							"Image": "sap-icon://map",
+							"OnPress": "/RiskManagementApp/Actions/NavToMap.action",
+							"_Name": "SideDrawerSection0Item6",
 							"Visible": true,
 							"TextAlignment": "Left"
 						}

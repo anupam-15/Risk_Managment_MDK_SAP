@@ -1,0 +1,39 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.Calendar",
+					"_Name": "SectionCalendar0",
+					"Visible": true,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"CalendarType": "Expandable",
+					"NumberOfDays": 10,    
+					"DayHeaderFormat": "d",
+					"IsPersistentSelection": true
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Calendar_PastDaysPage",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Team Calendar"
+	},
+	"OnLoaded": "Rules/CalendarRules/ShowPastDays.js"
+}

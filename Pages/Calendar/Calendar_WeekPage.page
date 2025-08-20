@@ -1,0 +1,65 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel0",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "/RiskManagementApp/Rules/CalendarRules/SetWeekHeader.js",
+							"TextWrap": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "HeaderSection"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"NumberOfDays": 7,
+					"DayHeaderFormat": "EEEE",
+					"_Type": "Section.Type.Calendar",
+					"_Name": "SectionCalendar0",
+					"Visible": true,
+					"CalendarType": "Week",
+					"StartDayOfWeek": "Sun",
+					"IsPersistentSelection": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Calendar_WeekPage",
+	"OnLoaded": "Rules/Calendar/SetWeekHeader.js",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Team Calendar"
+	}
+}

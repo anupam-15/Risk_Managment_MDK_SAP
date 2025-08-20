@@ -1,0 +1,50 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Day",
+					"PageToOpen": "/RiskManagementApp/Pages/Calendar/Calendar_DayPage.page",
+					"_Name": "TablDay"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Week",
+					"PageToOpen": "/RiskManagementApp/Pages/Calendar/Calendar_WeekPage.page",
+					"_Name": "TabIWeek"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Month",
+					"PageToOpen": "/RiskManagementApp/Pages/Calendar/Calendar_MonthPage.page",
+					"_Name": "TabIMonth"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Calendar_TabPage",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Add",
+				"Icon": "sap-icon://appointment",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/RiskManagementApp/Actions/Calendar/NavToCreateAppointment.action"
+			}
+		],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

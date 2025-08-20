@@ -11,5 +11,13 @@
 	"_SchemaVersion": "25.6",
 	"_Name": "RiskManagementApp",
 	"SideDrawer": "/RiskManagementApp/Pages/SideDrawer0.page",
-	"Online": true
+	"Online": true,
+
+	"AppVariables": [
+    {
+      "_Name": "QRResult",
+      "_Type": "String",
+	  "Value": ""
+    }
+  ]
 }

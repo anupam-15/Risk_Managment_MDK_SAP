@@ -1,0 +1,40 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Module": "MyMapModule",
+					"Control": "MyMapExtension",
+					"Class": "MyMapClass"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Map",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Map Screen "
+	}
+}

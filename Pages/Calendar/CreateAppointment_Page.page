@@ -1,0 +1,59 @@
+{
+    "_Type": "Page",
+    "_Name": "CreateAppointment_Page",
+    "Caption": "Create Appointment",
+    "Controls": [
+        {
+            "_Type": "Control.Type.SectionedTable",
+            "_Name": "SectionedTable0",
+            "Sections": [
+                {
+                    "_Type": "Section.Type.FormCell",
+                    "Controls": [
+                        {
+                            "_Type": "Control.Type.FormCell.DatePicker",
+                            "_Name": "DatePicker",
+                            "Caption": "Date",
+                            "Mode": "Date",
+                            "Value": "{SelectedDate}",
+                            "Position": 0
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.DatePicker",
+                            "_Name": "StartTime",
+                            "Caption": "Start Time",
+                            "Mode": "Time",
+                            "Value": "",
+                            "Position": 1
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.DatePicker",
+                            "_Name": "EndTime",
+                            "Caption": "End Time",
+                            "Mode": "Time",
+                            "Value": "",
+                            "Position": 2
+                        },
+                        {
+                            "_Type": "Control.Type.FormCell.SimpleProperty",
+                            "_Name": "Title",
+                            "Caption": "Title",
+                            "Value": "",
+                            "Position": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "ActionBar": {
+        "Items": [
+            {
+                "_Type": "Control.Type.ActionBarItem",
+                "Caption": "Save",
+                "OnPress": "/RiskManagementApp/Rules/CalendarRules/SaveAppointment.js",
+               "Position": "left"
+            }
+        ]
+    }
+}
